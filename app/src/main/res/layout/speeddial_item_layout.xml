@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:customfont="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    card_view:cardUseCompatPadding="true"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="70dp"
+
+    xmlns:app="http://schemas.android.com/tools"
+    android:background="@color/window_background"
+    android:id="@+id/rl"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    >
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="14dp"
+        android:visibility="gone"
+        android:text="Number"
+        />
+
+    <ImageView
+        android:id="@+id/contactphoto"
+        android:layout_width="50dip"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/def_img"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/contactphoto"
+        android:text="Name"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/calltype"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+
+        android:layout_below="@+id/time"
+        android:layout_toRightOf="@+id/contactphoto"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/calltype"
+        android:text="Date"
+        android:textColor="#bfbfbf"
+        android:paddingTop="2dp"
+        android:layout_marginBottom="10dp"
+        android:paddingBottom="3dp" />
+
+    <ImageButton
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/contactphoto"
+        android:src="@drawable/ic_menu_moreoverflow_normal_holo_light"
+        android:background="@null"
+        />
+
+    <!-- <com.example.call.MySpinner
+         android:id="@+id/spinner1"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/contactphoto"
+         android:background="@drawable/ic_menu_moreoverflow_normal_holo_light" >
+    </com.example.call.MySpinner>
+    -->
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/calltype"
+        android:layout_centerVertical="true"
+        android:text="Time"
+        android:textColor="#bfbfbf" />
+
+</RelativeLayout>
+    </android.support.v7.widget.CardView>
